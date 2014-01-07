@@ -1,0 +1,51 @@
+/*!
+* comments
+*/
+html{
+ zoom: expression(function(ele){
+   ele.style.zoom = "1";
+   document.execCommand("BackgroundImageCache", false, true);
+ }(this));
+}
+
+.break-all{
+ -moz-hyphens: auto;
+ -webkit-hyphens: auto;
+ hyphens: auto;
+}
+
+/* * identity */
+.fix-float{
+ *zoom:1;
+ _zoom:1;
+ zoom:1\9;
+}
+
+/* :status */
+.fix-float:after{ 
+ content:"\0020";
+ display:block;
+ height:0;
+ clear:both
+}
+
+body{
+ color: #3c3c3c;
+ overflow-x: hidden;
+ -webkit-backface-visibility: hidden;
+ font: 12px/1.5 "Lucida Grande", Helvetica, Arial, Verdana, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+}
+
+body[lang|=en] { 
+  color:blue; 
+}
+/* datauri */
+.logo{
+  background:url("data:image/png;base64,iVBj8+IDx4OnhsbnM6eD0kSuQmCC");
+}
+/* media queries */
+@media (max-width:1280px){
+	.nav{
+		width:990px;
+	}
+}

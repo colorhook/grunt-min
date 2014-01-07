@@ -1,0 +1,5 @@
+node_modules/
+tmp/
+test/
+.svn
+.DS_Store
